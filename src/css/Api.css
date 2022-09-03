@@ -1,0 +1,61 @@
+/* SITE-BODY CSS STARTS */
+h1,h2,h3,h4,h5,h6{
+    color:#444444;
+  }
+.body-header{
+    padding: 1.5rem 2.5rem;
+    /* padding-left: ; */
+    
+}
+
+.body-header span {
+    position: absolute;
+    right: 2rem;
+}
+
+.site-body{
+      margin-left: 17rem;
+       
+     
+  }
+  
+  .body-grid{ 
+    padding-left: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr); /*
+    grid-auto-rows: minmax(500px , auto);
+    grid-gap: 50px; */
+
+  }
+
+  .card-flex{
+     display: flex;
+     flex-direction:column; 
+     justify-content: center;
+     align-items: center;
+  }
+  .card{  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+      
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.09);
+    text-align: center;
+  }
+  
+  .card img{
+   
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  .card-container{
+    padding:10px;
+  }
+  
+  /* SITE-BODY CSS ENDS */

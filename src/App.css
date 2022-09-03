@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* Sidebar CSS STARTS */
+a{
+  color: inherit;
+  text-decoration: none
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  padding: 1rem;
+  margin-bottom: .1rem;
+}
+.li:nth-child(1){
+  margin-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
+li:active{
+  border-left: 5px solid darkslategrey ;
+  background-color: rgba(173,216,230,0.5);
+}
+
+.sidebar{
+  position:fixed;
+  /* top: 8px; */
+  /* left: 16px; */
+  min-width: 17rem;
   min-height: 100vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+}
+
+.sidebar-element1{
+  display:flex;
+  /* padding-left: 20px; */
+  margin-left: 10px;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+/* .sidebar-element1:nth-child(3){
+  align-self: flex-end;
+} */
+.sidebar-element1 img {
+  width: 32px;
+  position :relative;
+  gap:2rem;
+  border-radius: 50%;
+  /* left:0px; */
+  top:8px;
+}
+
+
+.sidebar-element2{
+  display:flex;
+  /* padding-left: 20px; */
+  margin-left: 16px;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items:baseline;
+  font-size: 1.1rem;
+}
+
+.sidebar-element3{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* padding-left: 20px; */
+  /* margin-left: 16px; */
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items:baseline;
+  font-size: 1rem;
+}
+.sidebar-element3 img {
+  width: 32px;
+  position :relative;
+  top:8px;
+  gap:2rem;
+  padding-right: 2rem;
+  border-radius: 50%;
+  /* left:0px; */
+}
+
+.sidebar-element4{
+  display:flex;
+  gap: 2rem;
+  /* margin-left: 4rem; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sidebar-element4 p {
+  display: inline-flex;
+  padding-left: 4rem;
+  /* align-self: space-between; */
+  gap: 2rem;
+}
+
+.sidebar-links{
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  gap: .7rem;
+  font-size: 1.1rem;
+}
+.need-padding{
+  padding-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.sidebar-social{
+  display: flex;
+  padding-top: .3rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+
+  justify-content: space-evenly;
+  gap: .2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copyright{
+  margin: 0 5rem;
+  padding-top: .2rem;
+  font-size: small;
+  font-weight: 100;
 }
+
+/* .company-logo */
+
+/*  Sidebar CSS ENDS */
